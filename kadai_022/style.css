@@ -1,0 +1,82 @@
+body, h1, p {
+    margin: 0;
+}
+
+p, a {
+    font-size: 20px;
+}
+
+header{
+    margin-bottom: 20px;
+    background-color:  rgb(244, 79, 79)
+}
+h1{text-align:  center; 
+    color: rgb(255, 255, 255)     /* 文字色指定 */
+}
+
+main{margin:10px ;}
+
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents{
+    text-align: center;
+    flex-basis:  25%;                  /* 幅指定 */
+    padding: 10px 15px;
+    margin: 20px 0;
+    border: solid 3px; 
+    border-color: rgb(238, 204, 204)
+}
+
+h2{
+    border-bottom:  dotted 3px rgb(236, 122, 122);
+}
+h2::before {
+   content: "●";
+   color: rgb(239, 111, 139);
+}
+
+p:nth-child(3):first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+img{
+    margin: 10px 0;
+    width: 70%;
+}
+
+footer{
+     margin: 0 auto;
+     text-align: center;
+     background-color:rgb(244, 79, 79)
+}
+
+a:link{
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: purple; /* 訪問済みのリンクの色を紫に変更 */
+}
+
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+
+  
+@media screen and (max-width: 768px) {
+    .flexbox-container {
+        display: block;
+    }
+    h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+}
